@@ -1,3 +1,26 @@
+JM60
+======================
+[外设堂地址](http://www.weistang.com/thread-99784-1-1.html)
+## 开发板为 Arduino Pro Micro (淘宝20+一片, 18个IO, 用5x13矩阵, 无灯gh60)
+### 改动的文件为 
+	config.h(更改为5x13矩阵)
+	keymap_common.h 
+	keymap_poker.h (更改键盘按键及层阵列)
+	matrix.c (矩阵扫描程序, 更改所使用引脚)
+	led.c (注视掉led灯控代码)
+### 针脚:
+	行引脚定义
+		row:  0   1   2   3   4
+		pin :  D3  D2  D1  D0  D4
+
+	列引脚定义
+		col:  0   1   2   3   4   5   6   7   8   9   10  11  12
+		pin:  C6  D7  E6  B4  B5  B6  B2  B3  B1  F7  F6  F5  F4
+
+### 使用方法
+	短接rst及接地两次
+	$ make
+	$ sudo avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 -b 57600 -U flash:w:gh60_lufa.hex
 GH60 keyboard firmware
 ======================
 DIY compact keyboard designed and run by komar007 and Geekhack community.
