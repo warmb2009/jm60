@@ -8,6 +8,8 @@ JM60
 	keymap_poker.h (更改键盘按键及层阵列)
 	matrix.c (矩阵扫描程序, 更改所使用引脚)
 	led.c (注视掉led灯控代码)
+	
+	修改自tmk_keyboard/keyboard/gm60
 ### 针脚:
 	行引脚定义
 		row:  0   1   2   3   4
