@@ -111,8 +111,8 @@ static void  init_cols(void)
     DDRC  &= ~(1<<6);
     PORTC |=  (1<<6);
     
-    DDRB  &= ~(1<<6 | 1<< 5 | 1<<4 | 1<<3 | 1<<1);
-    PORTB |=  (1<<6 | 1<< 5 | 1<<4 | 1<<3 | 1<<1);
+    DDRB  &= ~(1<<6 | 1<< 5 | 1<<4 | 1<<3 | 1<<2 | 1<<1);
+    PORTB |=  (1<<6 | 1<< 5 | 1<<4 | 1<<3 | 1<<2 | 1<<1);
 }
 
 static matrix_row_t read_cols(void)
