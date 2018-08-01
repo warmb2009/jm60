@@ -1,0 +1,1 @@
+sudo avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 -b 57600 -U flash:w:gh60_lufa.hex
