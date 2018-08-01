@@ -64,6 +64,7 @@ CONFIG_H = config.h
 #MCU = at90usb1287
 MCU = atmega32u4
 
+#MCU = stm32f103c8t6
 # Processor frequency.
 #     This will define a symbol, F_CPU, in all source code files equal to the
 #     processor frequency in Hz. You can then use this symbol in your source code to
